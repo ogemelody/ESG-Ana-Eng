@@ -1,0 +1,20 @@
+version: 2
+models:
+  - name: stg_reference
+    columns: 
+      - name: FUND_NAME
+        tests:
+          - unique
+
+  - name: stg_active_attribution
+    columns:
+      - name: category
+        tests:
+          - accepted_values:
+              values:
+                - Communication services
+                - Consumer Discretionary
+                - Consumer Staples
+                - Energy
+                - Financials 
+         

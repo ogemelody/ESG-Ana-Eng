@@ -1,0 +1,17 @@
+select
+    DESCRIPTION,
+    LEVEL,
+    PORTFOLIO,
+    BENCHMARK,
+    ACTIVE,
+    PORTFOLIO_1,
+    BENCHMARK_1,
+    ACTIVE_1,
+    PORTFOLIO_2,
+    BENCHMARK_2,
+    ACTIVE_2,
+    SECTOR_ALLOCATION,
+    SECURITY_SELECTION
+
+FROM {{source ('raw_data','IMPACT_TABLE')}}
+

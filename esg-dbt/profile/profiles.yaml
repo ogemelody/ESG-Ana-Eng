@@ -1,0 +1,17 @@
+aesg_snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: SR18550.eu-central-1
+
+      # User/password auth
+      user: MelodyE
+      password: Egwuchukwu_13
+      role: ACCOUNTADMIN
+      database: ESG_database
+      warehouse: d2b_warehouse
+      schema: ESG_schema
+      threads: 1 
+      client_session_keep_alive: False
+      query_tag: dbt-snowflake

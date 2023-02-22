@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: esg_database1
+    schema: esg_schema1
+    tables:
+    - name: ACTIVE_ATTRIBUTION_TABLE
+    - name: ANALYTICS_TABLE
+    - name: IMPACT_TABLE
+    - name: REFERENCE_TABLE
+      loaded_at_fileld: Reporting_date
+      Freshness:
+        warn_after: {count: 12, period: hours}
+        error_after: {count: 24, peorid:hours}
