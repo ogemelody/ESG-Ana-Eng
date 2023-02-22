@@ -42,7 +42,7 @@ create table esg_database1.esg_schema1.impact_table(
     Portfolio_Code string);
     
 copy into esg_database1.esg_schema1.impact_table 
-from s3://esg-preprocessed-data/impactR.csv credentials=(aws_key_id='AKIA2FLDO5XMFZLCIDNZ' aws_secret_key='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')
+from s3://esg-preprocessed-data/impactR.csv credentials=(aws_key_id='aws_key_id' aws_secret_key='aws_secret_key')
 file_format = (type = csv field_delimiter = ',' skip_header = 1);
 
 
@@ -56,7 +56,7 @@ create table esg_database1.esg_schema1.reference_table(
     Date date);
     
 copy into esg_database1.esg_schema1.reference_table 
-from s3://esg-preprocessed-data/referenceR.csv credentials=(aws_key_id='AKIA2FLDO5XMFZLCIDNZ' aws_secret_key='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')
+from s3://esg-preprocessed-data/referenceR.csv credentials=(aws_key_id='aws_key_id' aws_secret_key='aws_secret_key')
 file_format = (type = csv 
                field_delimiter = ',' 
                skip_header = 1
@@ -101,7 +101,7 @@ create table esg_database1.esg_schema1.Analytics_table(
     Sustainalytics_Management_Gap_Score int);
     
 copy into esg_database1.esg_schema1.Analytics_table 
-from s3://esg-preprocessed-data/AnalyticsR.csv credentials=(aws_key_id='AKIA2FLDO5XMFZLCIDNZ' aws_secret_key='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')
+from s3://esg-preprocessed-data/AnalyticsR.csv credentials=(aws_key_id='aws_key_id' aws_secret_key='aws_secret_key')
 file_format = (type = csv 
                field_delimiter = ',' 
                skip_header = 1 
@@ -132,7 +132,7 @@ create table esg_database1.esg_schema1.Active_attribution_table(
     time_lens string);
     
 copy into esg_database1.esg_schema1.Active_attribution_table 
-from s3://esg-preprocessed-data/active_attributionR.csv credentials=(aws_key_id='AKIA2FLDO5XMFZLCIDNZ' aws_secret_key='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')
+from s3://esg-preprocessed-data/active_attributionR.csv credentials=(aws_key_id='aws_key_id' aws_secret_key='aws_secret_key')
 file_format = (type = csv 
                field_delimiter = ',' 
                skip_header = 1)
