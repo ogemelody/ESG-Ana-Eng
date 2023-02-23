@@ -3,11 +3,11 @@ aesg_snowflake:
   outputs:
     dev:
       type: snowflake
-      account: SR18550.eu-central-1
+      account: <"account_name">
 
       # User/password auth
-      user: MelodyE
-      password: Egwuchukwu_13
+      user: "user_name"
+      password: "password"
       role: ACCOUNTADMIN
       database: ESG_database
       warehouse: d2b_warehouse
